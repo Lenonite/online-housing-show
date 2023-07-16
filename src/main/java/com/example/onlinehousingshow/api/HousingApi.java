@@ -59,7 +59,7 @@ public class HousingApi {
     }
 
 //    Finding All Housing Data (Public Api)
-    @GetMapping("/public/housings")
+    @GetMapping("/allData")
     public List<HousingDto> findAll(@RequestParam Optional<String> housingName,
                                     @RequestParam("numberOfFloors") Optional<Integer> floors,
                                     @RequestParam Optional<Integer> masterRoom,
